@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:hsl(233, 47%, 7%) ;
+    color: white;
+    font-family: Arial,sans-serif,"Times new Roman";
+}
+.card-body{
+    width: 90%;
+    height: 630px;
+    border:none;
+    margin: 0 auto;
+    border-radius: 20px;    
+    display: flex;    
+    flex-direction: column;
+    overflow: hidden;
+    background-color: hsl(244, 38%, 16%);
+    margin-top: 1em;
+    @media(min-width:900px){
+        flex-direction: row;
+        height: 400px;
+        margin-top: 5em;
+        
+    }
+}
+.card-info{
+     padding: 1em;
+}
+.img{
+    width: 100%;    
+    height: 350px;
+    border:none;
+    margin-bottom: 1em;
+    overflow: hidden;
+    background-color: hsl(277, 64%, 61%);
+    mix-blend-mode: normal;
+    @media(min-width:900px){
+        height: 100%;
+        width: 120%;
+    }
+}
+img{
+    object-fit: cover;
+    width: 100%;
+    @media(min-width:900px){
+      height: 100%;  
+    }
+}
+h1{
+  text-indent: 36px;  
+  text-align: center;
+  line-height: 1em;
+  margin-bottom: 1em;
+  @media(min-width:900px){
+     
+       text-indent: 0px;
+       line-height: 1.5em;
+       text-align: left;
+       padding: 1em;
+    } 
+}
+.violet{
+    color: hsl(277, 64%, 61%);
+}
+p{
+   text-indent: 1em;
+   line-height: 1.5em; 
+   text-align: center;
+   margin-bottom:.5em;
+   color: hsla(0, 0%, 100%, 0.75);
+   @media(min-width:900px){
+       text-align: left;
+       padding-left:1em;
+       text-indent: 0px;
+    }
+}
+.stats{
+     text-align: center;
+     padding: .5em;
+     color:  hsl(0, 0%, 100%);
+     @media(min-width:900px){
+         float: left;
+         padding-left: 1.5em;
+     }
+}
+ul{
+    list-style: none;
+    @media(min-width:900px){
+       display: flex;
+       justify-content: center;
+       }
+}
+ul li{
+    padding: .5em;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
+ul .list{
+    display: flex;
+    justify-content: center;
+    font-weight: normal;
+    font-size: 13px;
+    color:  hsla(0, 0%, 100%, 0.6);
+    
+}
